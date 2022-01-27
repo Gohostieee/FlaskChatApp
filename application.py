@@ -10,7 +10,6 @@ import sock
 application= Flask(__name__, template_folder='templates')
 socketio=None
 searching=[]
-key = b'gohostsncaroline'
 socket=sock.init(app=application)
 searching=[]
 
