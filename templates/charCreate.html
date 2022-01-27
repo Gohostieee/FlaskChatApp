@@ -1,0 +1,24 @@
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='charCreate.css') }}">
+<div class="mainDiv">
+	
+	<img class="background" src="{{ url_for('static', filename='src/revive.png')}}">
+	<div id='button-one'>
+		<a id="chat">C H A T</a>
+	</div>
+	
+	<div class="chatWindow"></div>
+</div>
+	<script src="{{ url_for('static', filename='javascript/chat.js') }}"> </script> 
+	<script src="{{ url_for('static', filename='javascript/sockets.js') }}"> </script> 
+
+<script type="text/javascript">
+	dragElement($(".chatWindow"))
+	function loadingScreenUp(){
+			$("#loading-pt2-down").prop("id","loading-pt2-up");
+			$("#loading-pt1-down").prop("id","loading-pt1-up");
+			console.log("kekw")
+		}
+window.addEventListener('load', function () {
+  loadingScreenDown()
+})
+</script>

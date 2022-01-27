@@ -1,0 +1,62 @@
+.tvFrame{
+	width:103%; position: absolute ;top: -2%;left: -2%;height: 125%;
+}
+.title{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+	font-size: 32;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.square{
+	height: 200px;
+ 	width: 400px;
+ 	background-color: ghostwhite;
+ 	border-width: thick;
+ 	border-color: grey;
+ 	border-radius: 50px;
+ 	display: inline-block;
+ 	position: relative;
+ 	top: -170%;
+ 	left: 36%;
+}
+#nameBox{
+	text-align: center;
+	margin-right: 10px;
+	margin-left: 13px;
+	top: 30%;
+	left: 40%;
+	border-width: 3px;
+	border-style: solid;
+	position: absolute;
+	border-color: black;
+
+}
+#passBox{
+	text-align: center;
+	display: inline-block;
+	margin-left: 10px;
+	margin-bottom: 40px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: black;
+}
+#login{
+}
+.centeredDiv{
+	position: absolute;
+	text-align: center;
+	left: 7px;
+
+}
+button{
+	left: 7px;
+	font-size: 26px;
+	font-weight: 100;
+	background-color: black;
+	border: none;
+	color: white;
+	font-family: 'Bakbak One', cursive;
+}
+body{
+}

@@ -1,0 +1,67 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>novia</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">	
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Press+Start+2P&family=Raleway:wght@100&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0px;">
+	<div id="mainContainer">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<div style="position: relative;">
+			<img src="{{ url_for('static', filename='src/Sky.png')}}" style="height:100%;display: inline-block;">
+			<a href="https://victoriahay.artstation.com/projects/onKvk" target="_blank">
+			<!--	<img src="{{ url_for('static', filename='src/vicky.png')}}"  style="position: absolute;right: 0%;bottom: 0%; height: 40%; ">-->
+			</a>
+			<div style="position:absolute;top: 40%;left: 50%;">
+				<form id="usr-signup" method="post" >
+					<input id="nameBox" type="text" name="song" placeholder="Enter your name">
+					<input id="passBox" type="text" name="song" placeholder="Enter your password">	
+					<br>
+					<input type="submit" value="sign in"id="login" onclick="auth='sign-up'" class="signUp-InButtons">
+				<input type="submit" id="signin" value="Sign up" class="signUp-InButtons">
+				</form>
+
+				<p style="font-family: 'px', cursive;text-align: center;position: absolute; margin-top:10%; left: -86%;">Click on any of the images for source!</p>
+					<p style="font-size: 4px">{{message}}</p>
+
+			</div> 
+		<div class="darkScreen hidden" id="screener">
+			<div class="warning"><p style="color: black; font-size: 13px;" id="error">{{msg}}</p>
+			</div>
+		</div>
+	</div>		
+
+	
+	</div>
+	<div class="loading-screen" id="loading-pt1-up"></div>
+	<div class="loading-screen" id="loading-pt2-up"></div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js" integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA==" crossorigin="anonymous"></script>
+	
+	<script src="{{ url_for('static', filename='javascript/genFunc.js') }}"> </script> 
+	<script src="{{ url_for('static', filename='javascript/loadPages.js') }}"> </script> 
+	<script src="{{ url_for('static', filename='javascript/login.js') }}"> </script> 
+
+
+	<script type="text/javascript" id='login'>
+		
+	</script>
+	<script type="text/javascript" id='loadFunctions'>
+	
+	</script>
+	<script type="text/javascript" id="userCheck" >
+	
+	</script>
+
+
+
+
+<script type="text/javascript" charset="utf-8">
+    
+</script>
+</body>
+</html>
+
